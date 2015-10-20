@@ -42,6 +42,32 @@ text = input("Please enter a string of text (the bigger the better): ")
 
 ltext = text.lower()
 
+anum = ltext.count(a)
+bnum = ltext.count(b)
+cnum = ltext.count(c)
+dnum = ltext.count(d)
+enum = ltext.count(e)
+fnum = ltext.count(f)
+gnum = ltext.count(g)
+hnum = ltext.count(h)
+inum = ltext.count(i)
+jnum = ltext.count(j)
+knum = ltext.count(k)
+lnum = ltext.count(l)
+mnum = ltext.count(m)
+pnum = ltext.count(p)
+qnum = ltext.count(q)
+rnum = ltext.count(r)
+snum = ltext.count(s)
+tnum = ltext.count(t)
+unum = ltext.count(u)
+vnum = ltext.count(v)
+wnum = ltext.count(w)
+xnum = ltext.count(x)
+ynum = ltext.count(y)
+znum = ltext.count(z)
+
+
 
 
 print ('The distrabution of characters in "{0}". is:'.format(text))
