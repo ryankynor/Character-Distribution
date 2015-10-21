@@ -36,38 +36,15 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-
+import collections
 
 text = input("Please enter a string of text (the bigger the better): ")
 
 ltext = text.lower()
 
-anum = ltext.count(a)
-bnum = ltext.count(b)
-cnum = ltext.count(c)
-dnum = ltext.count(d)
-enum = ltext.count(e)
-fnum = ltext.count(f)
-gnum = ltext.count(g)
-hnum = ltext.count(h)
-inum = ltext.count(i)
-jnum = ltext.count(j)
-knum = ltext.count(k)
-lnum = ltext.count(l)
-mnum = ltext.count(m)
-pnum = ltext.count(p)
-qnum = ltext.count(q)
-rnum = ltext.count(r)
-snum = ltext.count(s)
-tnum = ltext.count(t)
-unum = ltext.count(u)
-vnum = ltext.count(v)
-wnum = ltext.count(w)
-xnum = ltext.count(x)
-ynum = ltext.count(y)
-znum = ltext.count(z)
 
+results = collections.Counter(ltext)
+print(results)
 
-
-
-print ('The distrabution of characters in "{0}". is:'.format(text))
+print ({0}.format(results))
+#print ('The distrabution of characters in "{0}". is:'.format(text))
