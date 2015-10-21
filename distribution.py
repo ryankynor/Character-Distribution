@@ -39,12 +39,11 @@ Notice about this example:
 import collections
 
 text = input("Please enter a string of text (the bigger the better): ")
-
 ltext = text.lower()
-
 
 results = collections.Counter(ltext)
 print(results)
 
-print ({0}.format(results))
+for t in results:
+    print (t, results[t])
 #print ('The distrabution of characters in "{0}". is:'.format(text))
