@@ -42,8 +42,19 @@ text = input("Please enter a string of text (the bigger the better): ")
 ltext = text.lower()
 
 results = collections.Counter(ltext)
-print(results)
+#print(results)
 
-for t in results:
-    print (t, results[t])
+#for t in results:
+ #   print (t, results[t])
+highest = []
+
+for y in results:
+        highest.append(y)
+    
+highest.sort()
+for g in highest:
+    for z in results:
+        if results[z] == g:
+            print("".format(z for x in range(g)))
+
 #print ('The distrabution of characters in "{0}". is:'.format(text))
