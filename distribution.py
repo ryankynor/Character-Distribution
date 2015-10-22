@@ -49,12 +49,17 @@ results = collections.Counter(ltext)
 highest = []
 
 for y in results:
-        highest.append(y)
-    
+    highest.append(results[y])
 highest.sort()
 for g in highest:
     for z in results:
         if results[z] == g:
-            print("".format(z for x in range(g)))
+            e = 0
+            for s in range(g):
+                e += 1
+                if e == g:
+                    print("y")
+                else:
+                    print("y", end = "")
 
 #print ('The distrabution of characters in "{0}". is:'.format(text))
