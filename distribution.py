@@ -48,6 +48,7 @@ highest = []
 biglist = []
 for y in results:
     if results[y]:
+        
     else:
         highest.append(results[y])
 highest.sort()
