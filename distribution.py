@@ -47,14 +47,16 @@ highest = []
 
 biglist = []
 for y in results:
-    highest.append(results[y])
+    if results[y]:
+    else:
+        highest.append(results[y])
 highest.sort()
 
 #new = highest[::-1]
 for g in highest:
     for z in results:
         if results[z] == g:
-            results[z] = 0
+#           results[z] = 0
             for s in range(g):
                 biglist.append(g*z)
 print(biglist)
