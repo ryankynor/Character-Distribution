@@ -45,6 +45,7 @@ results = collections.Counter(ltext)
 
 highest = []
 
+biglist = []
 for y in results:
     highest.append(results[y])
 highest.sort()
@@ -53,13 +54,10 @@ highest.sort()
 for g in highest:
     for z in results:
         if results[z] == g:
-            e = 0
             results[z] = 0
             for s in range(g):
-                e += 1
-                if e == g:
-                    print(z)
-                else:
-                    print(z, end = "")
+                biglist.append(g*z)
+print(biglist)
+                
 
 #print ('The distrabution of characters in "{0}". is:'.format(text))
