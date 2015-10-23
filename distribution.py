@@ -42,20 +42,19 @@ text = input("Please enter a string of text (the bigger the better): ")
 ltext = text.lower()
 
 results = collections.Counter(ltext)
-#print(results)
 
-#for t in results:
- #   print (t, results[t])
 highest = []
 
 for y in results:
     highest.append(results[y])
 highest.sort()
+
 #new = highest[::-1]
 for g in highest:
     for z in results:
         if results[z] == g:
             e = 0
+            results[z] = 0
             for s in range(g):
                 e += 1
                 if e == g:
