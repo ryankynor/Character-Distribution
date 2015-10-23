@@ -51,6 +51,7 @@ highest = []
 for y in results:
     highest.append(results[y])
 highest.sort()
+#new = highest[::-1]
 for g in highest:
     for z in results:
         if results[z] == g:
@@ -58,8 +59,8 @@ for g in highest:
             for s in range(g):
                 e += 1
                 if e == g:
-                    print("y")
+                    print(z)
                 else:
-                    print("y", end = "")
+                    print(z, end = "")
 
 #print ('The distrabution of characters in "{0}". is:'.format(text))
