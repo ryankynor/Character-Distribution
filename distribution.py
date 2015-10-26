@@ -45,7 +45,8 @@ results = collections.Counter(ltext)
 textlen = len(results)
 stext = sorted(ltext)
 
-for stext in range(textlen, 0, -1):
+textlength = int(textlen)
+for stext in range(textlength, 0, -1):
     for c results:
         if c == count:
             print(c)
