@@ -42,9 +42,10 @@ text = input("Please enter a string of text (the bigger the better): ")
 ltext = text.lower()
 
 results = collections.Counter(ltext)
-textlen = len(text)
+textlen = len(results)
+
 for count in range(textlen, 0, -1):
-    for cin results:
+    for c results:
         if c == count:
             print(c)
 
