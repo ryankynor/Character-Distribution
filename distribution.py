@@ -42,13 +42,19 @@ text = input("Please enter a string of text (the bigger the better): ")
 ltext = text.lower()
 
 results = collections.Counter(ltext)
+textlen = len(text)
+for count in range(textlen, 0, -1):
+    for cin results:
+        if c == count:
+            print(c)
 
+"""
 highest = []
 
 biglist = []
 for y in results:
     if results[y]:
-        
+        #if not in y then append
     else:
         highest.append(results[y])
 highest.sort()
@@ -61,6 +67,7 @@ for g in highest:
             for s in range(g):
                 biglist.append(g*z)
 print(biglist)
-                
+     
 
 #print ('The distrabution of characters in "{0}". is:'.format(text))
+""" 
