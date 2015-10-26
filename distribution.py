@@ -43,8 +43,9 @@ ltext = text.lower()
 
 results = collections.Counter(ltext)
 textlen = len(results)
+stext = sorted(ltext)
 
-for count in range(textlen, 0, -1):
+for stext in range(textlen, 0, -1):
     for c results:
         if c == count:
             print(c)
