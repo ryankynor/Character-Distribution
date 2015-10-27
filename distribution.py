@@ -41,6 +41,8 @@ import collections
 text = input("Please enter a string of text (the bigger the better): ")
 ltext = text.lower()
 
+l1 = []
+l2 = []
 print (('The distribution of characters in "{0}" is: '.format(text))
 """
 results = collections.Counter(ltext)
@@ -52,6 +54,7 @@ textlength = int(textlen)
 for stext in ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
     dis.append(ltext.count(stext))
 
+zlist = list(zip(l1,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"))
 """
 highest = []
 
