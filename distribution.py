@@ -54,18 +54,18 @@ stext = sorted(ltext)
 for stext in letters:
     l2.append(ltext.count(stext))
 
-zlist = list(zip(l1,letters))
-
+zlist = list(zip(l2,letters))
+print(zlist)
 h = textlen
 while h > 0:
     for ltext in zlist:
-        if ltext[0] == textlen:
+        if ltext[0] == h:
             l1.append(ltext[1]*ltext[0])
     h = h - 1
     
 for stext in l1:
     print (stext)
-    
+
 
 """
 highest = []
