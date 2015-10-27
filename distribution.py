@@ -43,7 +43,9 @@ ltext = text.lower()
 
 l1 = []
 l2 = []
-print (('The distribution of characters in "{0}" is: '.format(text))
+
+letters = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+print (('The distribution of characters in "{0}" is: ').format(text))
 """
 results = collections.Counter(ltext)
 """
@@ -51,10 +53,10 @@ textlen = len(results)
 stext = sorted(ltext)
 
 textlength = int(textlen)
-for stext in ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+for stext in letters
     l2.append(ltext.count(stext))
 
-zlist = list(zip(l1,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"))
+zlist = list(zip(l1,letters))
 
 textlen = h
 while h > 0:
