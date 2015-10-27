@@ -55,7 +55,7 @@ for stext in letters:
     l2.append(ltext.count(stext))
 
 zlist = list(zip(l2,letters))
-print(zlist)
+#print(zlist)
 h = textlen
 while h > 0:
     for ltext in zlist:
