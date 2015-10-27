@@ -49,11 +49,11 @@ print (('The distribution of characters in "{0}" is: ').format(text))
 """
 results = collections.Counter(ltext)
 """
-textlen = len(results)
+textlen = len(text)
 stext = sorted(ltext)
 
-textlength = int(textlen)
-for stext in letters
+#textlength = int(textlen)
+for stext in letters:
     l2.append(ltext.count(stext))
 
 zlist = list(zip(l1,letters))
