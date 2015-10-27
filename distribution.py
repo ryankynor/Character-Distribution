@@ -52,9 +52,21 @@ stext = sorted(ltext)
 
 textlength = int(textlen)
 for stext in ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
-    dis.append(ltext.count(stext))
+    l2.append(ltext.count(stext))
 
 zlist = list(zip(l1,"a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"))
+
+textlen = h
+while h > 0:
+    for ltext in zlist:
+        if ltext[0] == textlen:
+            l1.append(ltext[1]*ltext[0])
+    textlen -= 1
+    
+for stext in l1:
+    print (stext)
+    
+
 """
 highest = []
 
