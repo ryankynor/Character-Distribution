@@ -61,7 +61,7 @@ while h > 0:
     for ltext in zlist:
         if ltext[0] == textlen:
             l1.append(ltext[1]*ltext[0])
-    textlen = textlen - 1
+    h = h - 1
     
 for stext in l1:
     print (stext)
