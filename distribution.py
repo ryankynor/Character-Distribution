@@ -58,7 +58,7 @@ for stext in letters:
 
 zlist = list(zip(l1,letters))
 
-textlen = h
+h = textlen
 while h > 0:
     for ltext in zlist:
         if ltext[0] == textlen:
